@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>社團智慧點名簿</title>
+  <title>社團點名簿</title>
   <style>
     :root { --primary: #1a73e8; --success: #34a853; --danger: #ea4335; --gray: #5f6368; }
     body { font-family: sans-serif; background: #f1f3f4; padding: 20px; }
@@ -42,7 +42,7 @@
     <h3 id="currentClubDisp"></h3>
 
     <div class="tabs">
-      <div id="tab1" class="tab active" onclick="switchTab('take')">我要點名</div>
+      <div id="tab1" class="tab active" onclick="switchTab('take')">社團點名</div>
       <div id="tab2" class="tab" onclick="switchTab('query')">已點查詢</div>
     </div>
 
@@ -64,12 +64,12 @@
       <div class="section">
         <label>已點名學生：</label>
         <div id="checkedList"></div>
-        <button class="btn-danger" style="width:100%; margin-top:15px; font-size:13px;" onclick="confirmDeleteAll()">全部刪除(該日)</button>
+        <button class="btn-danger" style="width:100%; margin-top:15px; font-size:13px;" onclick="confirmDeleteAll()">全部刪除</button>
       </div>
     </div>
 
     <div class="section">
-      <label>管理員密碼 (A1)：</label>
+      <label>管理員密碼：</label>
       <input type="password" id="adminPwd" placeholder="執行任何動作皆需密碼">
     </div>
 
